@@ -31,6 +31,5 @@ import random
 import RPi.GPIO as GPIO
 import time
 
-if __name__ == '__main__':
-	main()
-
+pygame.init()
+pygame.display.set_mode([1280, 1024], pygame.FULLSCREEN | pygame.HWSURFACE)
