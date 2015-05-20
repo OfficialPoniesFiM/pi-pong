@@ -33,3 +33,6 @@ import time
 
 pygame.init()
 pygame.display.set_mode([1280, 1024], pygame.FULLSCREEN | pygame.HWSURFACE)
+pixelSizeX = 20
+pixelSizeY = 16
+pixelSize = [pixelSizeX, pixelSizeY]
