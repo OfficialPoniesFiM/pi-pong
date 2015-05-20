@@ -31,8 +31,30 @@ import random
 import RPi.GPIO as GPIO
 import time
 
+currentlyRunning = True
+
 pygame.init()
-pygame.display.set_mode([1280, 1024], pygame.FULLSCREEN | pygame.HWSURFACE)
+mainScreen = pygame.display.set_mode((1280, 1024), pygame.FULLSCREEN | pygame.HWSURFACE)
+pygame.display.set_caption("PiPong")
 pixelSizeX = 20
 pixelSizeY = 16
 pixelSize = [pixelSizeX, pixelSizeY]
+BACKGROUNDCOLOR = (104, 255, 142)
+
+def pixelRasterize(pixelMultiplier, xy):
+	if xy == True:
+		return pixelMultiplier * (1280 / 20)
+	else:
+		return pixelMultiplier * (1024 / 16)
+	
+
+while currentlyRunning:
+	pygame.mouse.set_visible(False)
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			currentlyRunning = False
+	mainScreen.fill(BACKGROUNDCOLOR)
+	pygame.display.update()
+	time.sleep(1 / 60)
+pygame.quit()
+sys.exit()
