@@ -53,6 +53,12 @@ def characterRender(character, color, carX, carY):
 		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(1, True), pixelRasterize(7, True)])
 		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True) + pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(1, True), pixelRasterize(7, True)])
 		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True), pixelRasterize(carY, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+	else if character == "a":
+		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True), pixelRasterize(carY, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True) + pixelRasterize(2, True), pixelRasterize(carY, False) + pixelRasterize(.5, False), pixelRasterize(1, True), pixelRasterize(6, False)])
+		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False) + pixelRasterize(3.5, False), pixelRasterize(1, True), pixelRasterize(4, False)])
+		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True) + pixelRasterize(3, True), pixelRasterize(carY, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+		pygame.draw.rect(mainScreen, color, [pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(5, True), pixelRasterize(1, False)])
 
 while currentlyRunning:
 	pygame.mouse.set_visible(False)
