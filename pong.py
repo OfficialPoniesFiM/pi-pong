@@ -66,6 +66,11 @@ def characterRender(character, color, carX, carY):
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) + pixelRasterize(3, False), pixelRasterize(3, True), pixelRasterize(1, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True) + pixelRasterize(2, True), pixelRasterize(carY, False) - pixelRasterize(1.5, False), pixelRasterize(1, True), pixelRasterize(2, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True) + pixelRasterize(2, True), pixelRasterize(carY, False) + pixelRasterize(1.5, False), pixelRasterize(1, True), pixelRasterize(2, False)])
+	else if character == "b":
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(1, True), pixelRasterize(7, False)])
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) + pixelRasterize(3, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True) + pixelRasterize(2, True), pixelRasterize(carY, False) + pixelRasterize(1, False), pixelRasterize(1, True), pixelRasterize(3, False)])
 
 while currentlyRunning:
 	pygame.mouse.set_visible(False)
