@@ -96,11 +96,15 @@ def characterRender(character, color, carX, carY):
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) - pixelRasterize(3, False), pixelRasterize(5, True), pixelRasterize(1, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) + pixelRasterize(3, False), pixelRasterize(5, True), pixelRasterize(1, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(1, True), pixelRasterize(7, False)])
-	else if character == "e':
+	else if character == "e":
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) - pixelRasterize(1, False), pixelRasterize(5, True), pixelRasterize(1, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) + pixelRasterize(1, False), pixelRasterize(5, True), pixelRasterize(1, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) + pixelRasterize(3, False), pixelRasterize(5, True), pixelRasterize(1, False)])
 		mainScreen.fill(color, rect=[pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(1, True), pixelRasterize(5, False)])
+	else if character == "F":
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True), pixelRasterize(carY, False) - pixelRasterize(3, False), pixelRasterize(5, True), pixelRasterize(1, False)])
+		mainScreen.fill(color, rect=[pixelRasterize(carX, True) - pixelRasterize(2, True), pixelRasterize(carY, False), pixelRasterize(1, True), pixelRasterize(7, False)])
 
 while currentlyRunning:
 	pygame.mouse.set_visible(False)
