@@ -34,6 +34,7 @@ currentlyRunning = True
 
 pygame.init()
 mainScreen = pygame.display.set_mode((1280, 1024), pygame.FULLSCREEN | pygame.HWSURFACE)
+# mainScreen = pygame.display.set_mode((1280, 1024))
 pygame.display.set_caption("PiPong")
 pixelSizeX = 20
 pixelSizeY = 16
