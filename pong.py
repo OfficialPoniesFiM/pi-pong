@@ -43,6 +43,8 @@ BACKGROUNDCOLOR = (104, 255, 142)
 WHITE = (255, 255, 255)
 pongStart = False
 pongPlay = False
+pongMoveOne = 3
+pongMoveTwo = 3
 
 def pixelRasterize(pixelMultiplier, xy):
 	if xy == True:
