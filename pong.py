@@ -134,9 +134,9 @@ while currentlyRunning:
 			if event.key == pygame.K_RETURN:
 				if pongPlay == False:
 					pongStart = True
-			if event.key == pygame.K_W:
+			if event.key == pygame.K_w:
 				pMoveOne = 1
-			elif event.key == pygame.K_S:
+			elif event.key == pygame.K_s:
 				pMoveOne = 2
 			else:
 				pMoveOne = 3
